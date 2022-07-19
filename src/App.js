@@ -1,23 +1,60 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { CardContent, Typography, CardMedia } from '@mui/material';
+import Navbar from './Nav/navbar';
+import Footer from './Footer/Footer';
+import { Container } from '@mui/system';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import { Grid } from '@mui/material';
+import NewHome from '../src/Assets/NewHome.png'
+
+import Button from '@mui/material/Button';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Typography variant='h4' color='primary' sx={{ mt: 3 }}>Personal Portfolio page</Typography>
+
+    <div style={{display: "flex"}}>
+      <Container component='main'>
+        <Grid item={true} xs={4} sx={{mt:1, mb:3}}>
+          {/* Photo */}
+          <Grid>
+            <Card sx={{ maxWidth: 400 }}>
+              <CardMedia
+                component="img"
+                image={NewHome}
+                alt="Franco Photo"
+              />
+              <CardContent>
+
+              </CardContent>
+            </Card>
+          </Grid>
+          {/* Content */}
+
+        </Grid>
+        <Grid item={true} xs={4} sx={{mt:1, mb:3}}>
+          <Card sx={{ maxWidth: 700 }}>
+            <CardContent>
+              <Typography variant='h7' color='primary'>Franco Enslin </Typography>
+              <Typography variant='body1'>
+                Junior Software developer at Keystone Electronic Solutions.
+              </Typography>
+              <Typography variant='body2'>
+                Currently working in Reactjs, Redux and Python FastAPI
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Container>
+      </div>
+
+      <Footer sx={{ mt: 20 }} />
+
     </div>
   );
 }
