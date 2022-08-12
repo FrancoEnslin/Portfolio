@@ -12,7 +12,6 @@ import NewHome from '../src/Assets/NewHome.png'
 import Button from '@mui/material/Button';
 import Main from './Main';
 
-ƒ
 function App() {
   return (
     <Main />
