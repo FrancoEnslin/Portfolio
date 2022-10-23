@@ -22,7 +22,7 @@ export default function Contact() {
         })
     }
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText("Sending...");
         let response = await fetch("http://localhost:5000/contact", {
@@ -34,7 +34,7 @@ export default function Contact() {
         });
         setButtonText("Send");
         let result = await response.json();
-        setFormDetails(formInitialDetails);
+        setFormDetails(startingFormDetails);
         if (result.code == 200) {
             setStatus({ succes: true, message: 'Message sent successfully' });
         } else {
@@ -44,7 +44,7 @@ export default function Contact() {
 
     return (
         <section className='contact' id='connect'>
-            <Container>
+            <Container>    
                 <Row className='align-items-center'>
                     <Col md={6}>
                         <img src={contactImg} alt='Image'></img>

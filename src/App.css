@@ -54,7 +54,7 @@ a:hover {
 }
 
 img {
-  width: 20%;
+  width: 100%;
   height: auto;
 }
 
@@ -615,4 +615,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
-} 
+}
