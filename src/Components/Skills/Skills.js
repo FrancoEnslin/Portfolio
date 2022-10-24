@@ -10,6 +10,10 @@ import "react-multi-carousel/lib/styles.css";
 // import arrow1 from "../Assets/arrow1.svg";
 // import arrow2 from "../Assets/arrow2.svg";
 import colorSharp from "../../Assets/color-sharp.png"
+import webdevelopment from '../../Assets/web-development.png'
+import appdevelopment from '../../Assets/development.png'
+import ui from '../../Assets/ui.png'
+import time from '../../Assets/time.png'
 
 
 export const Skills = () => {
@@ -17,7 +21,6 @@ export const Skills = () => {
 
     const responsive = {
         largeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
@@ -43,22 +46,22 @@ export const Skills = () => {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
-                            <p>Some nice skills down here, be sure to check them out</p>
+                            <p>These are the skills I possess</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={webdevelopment} alt="Image" />
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={appdevelopment} alt="Image" />
                                     <h5>App Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <img src={ui} alt="Image" />
+                                    <h5>UI Design</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
+                                    <img src={time} alt="Image" />
                                     <h5>Business Management</h5>
                                 </div>
                             </Carousel>

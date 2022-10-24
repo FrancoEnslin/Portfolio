@@ -2,6 +2,7 @@ import { isValidInputTimeValue } from '@testing-library/user-event/dist/utils'
 import React, { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import {ArrowRightCircle} from 'react-bootstrap-icons'
+import { useHref } from 'react-router-dom'
 import headerImg from '../../Assets/header-img.svg'
 
 export const Banner = () => {
@@ -48,8 +49,8 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className='tagline'>Welcome to my portfolio</span>
                         <h1>{`Franco Enslin `} <span className='wrap'>{text}</span></h1>
-                        <p>Yo this is some nice text </p>
-                        <button onClick={ () => {console.log("Thanx for the click")}}>Yo click me to do something cool<ArrowRightCircle size={25} />
+                        <p>Keep scrolling to discover my skills and previous projects </p>
+                        <button onClick={() => {window.location = '#connect'}} >Let's connect<ArrowRightCircle size={25} />
                         
                         </button>
                     </Col>

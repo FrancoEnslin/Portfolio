@@ -1,29 +1,32 @@
 import React from 'react'
 import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
-import  {ProjectCard}  from './ProjectCard';
-// import colorSharp2 from 'src/Assets/color-sharp2.png'
+import { ProjectCard } from './ProjectCard';
+ import colorSharp2 from '../../Assets/color-sharp2.png'
 
 import projImg2 from '../../Assets/project-img2.png'
 import projImg3 from '../../Assets/project-img3.png'
 import projImg1 from '../../Assets/project-img1.png'
+import projectDashboard from '../../Assets/project-dashboard.png'
+import projectAbout from '../../Assets/project-about.png'
+import projectCreate from '../../Assets/project-createproduct.png'
 
 export default function Projects() {
 
     const projects = [
         {
-            title: "Business Startup",
+            title: "Final year project",
             description: "Design & Development",
-            imgUrl: projImg1,
+            imgUrl: projectDashboard,
         },
         {
-            title: "Business Startup",
+            title: "Final year project",
             description: "Design & Development",
-            imgUrl: projImg2,
-        }, 
+            imgUrl: projectAbout,
+        },
         {
-            title: "Business Startup",
+            title: "Final year project",
             description: "Design & Development",
-            imgUrl: projImg3,
+            imgUrl: projectCreate,
         },
         {
             title: "Business Startup",
@@ -66,10 +69,10 @@ export default function Projects() {
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project, index )=> {
+                                            projects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index}
-                                                    {...project}
+                                                        {...project}
                                                     />
                                                 )
                                             })
@@ -77,17 +80,27 @@ export default function Projects() {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                        Some nice Test 
+                                    <Row>
+                                        {
+                                            projects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                        Yo, some nice text again
+                                    Yo, some nice text again
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
-            {/* <img className='background-image-right' src={colorSharp2} /> */}
+            <img className='background-image-right' src={colorSharp2} />
         </section>
     )
 }
