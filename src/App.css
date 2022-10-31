@@ -15,6 +15,11 @@
 	font-weight: 400;
 }
 
+
+.pfp{
+  border-radius: 20%;
+}
+
 /************ Default Css ************/
 * {
   margin: 0;

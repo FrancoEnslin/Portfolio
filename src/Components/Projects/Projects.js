@@ -1,18 +1,91 @@
 import React from 'react'
 import { Col, Container, Nav, Row, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
- import colorSharp2 from '../../Assets/color-sharp2.png'
+import colorSharp2 from '../../Assets/color-sharp2.png'
 
+//Random Images
 import projImg2 from '../../Assets/project-img2.png'
 import projImg3 from '../../Assets/project-img3.png'
 import projImg1 from '../../Assets/project-img1.png'
+//Final year project
 import projectDashboard from '../../Assets/project-dashboard.png'
 import projectAbout from '../../Assets/project-about.png'
 import projectCreate from '../../Assets/project-createproduct.png'
 
+//UI Design projects
+
+
+//Startup projects
+
 export default function Projects() {
 
-    const projects = [
+    const Devprojects = [
+        {
+            title: "Final year project",
+            description: "Design & Development",
+            imgUrl: projectDashboard,
+        },
+        {
+            title: "Final year project",
+            description: "Design & Development",
+            imgUrl: projectAbout,
+        },
+        {
+            title: "Final year project",
+            description: "Design & Development",
+            imgUrl: projectCreate,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+        },
+    ];
+
+    const UIProjects = [
+        {
+            title: "Final year project",
+            description: "Design & Development",
+            imgUrl: projectDashboard,
+        },
+        {
+            title: "Final year project",
+            description: "Design & Development",
+            imgUrl: projectAbout,
+        },
+        {
+            title: "Final year project",
+            description: "Design & Development",
+            imgUrl: projectCreate,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+        },
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+        },
+    ];
+
+    const StartUpProjects = [
         {
             title: "Final year project",
             description: "Design & Development",
@@ -52,24 +125,24 @@ export default function Projects() {
                 <Row>
                     <Col size={12}>
                         <h2>Projects</h2>
-                        <p>Some nice projects take a look</p>
+                        <p>Projects I have worked on</p>
                         <Tab.Container id='project-tabs' defaultActiveKey="first">
                             <Nav variant='pills' className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first" > Tab 1 </Nav.Link>
+                                    <Nav.Link eventKey="first" > Software Development </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second" > Tab 2 </Nav.Link>
+                                    <Nav.Link eventKey="second" > UI Design </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third" > Tab 3 </Nav.Link>
+                                    <Nav.Link eventKey="third" > Ongoing projects </Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project, index) => {
+                                            Devprojects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index}
                                                         {...project}
@@ -82,7 +155,7 @@ export default function Projects() {
                                 <Tab.Pane eventKey="second">
                                     <Row>
                                         {
-                                            projects.map((project, index) => {
+                                            UIProjects.map((project, index) => {
                                                 return (
                                                     <ProjectCard key={index}
                                                         {...project}
@@ -93,7 +166,17 @@ export default function Projects() {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    Yo, some nice text again
+                                    <Row>
+                                        {
+                                            StartUpProjects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>

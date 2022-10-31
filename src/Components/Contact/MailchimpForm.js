@@ -7,7 +7,7 @@ export const MailchimpForm = ()=> {
     const url = `${process.env.REACT_APP_MAILCHIMP_URL}?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`;
     return (
         <div>
-            <MailchimpSubscribe 
+            {/* <MailchimpSubscribe 
             url={url}
             render={({ subscribe, status, message }) => (
                 <NewsLetter
@@ -16,7 +16,7 @@ export const MailchimpForm = ()=> {
                     onValidated={formData => subscribe(formData)}
                 />
             )} 
-            />
+            /> */}
         </div>
     )
 }
