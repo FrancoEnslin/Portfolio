@@ -8,7 +8,8 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-
+import logogif from '../../Assets/Logo gif.gif'
+import myLogo from '../../Assets/Logo-transBackground.png'
 import pfp from '../../Assets/pfp.jpeg'
 
 export const NavBar = () => {
@@ -40,7 +41,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={myLogo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>

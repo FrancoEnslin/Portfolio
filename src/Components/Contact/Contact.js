@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import contactImg from '../../Assets/contact-image.svg'
+import contact from '../../Assets/Contact.png'
+import oldContact from '../../Assets/Contact-removebg-preview.png'
+import newContact from '../../Assets/Contact-removebg.png'
 
 export default function Contact() {
     const startingFormDetails = {
@@ -47,7 +50,7 @@ export default function Contact() {
             <Container>    
                 <Row className='align-items-center'>
                     <Col md={6}>
-                        <img src={contactImg} alt='Image'></img>
+                        <img src={newContact} alt='Image'></img>
                     </Col>
                     <Col md={6}>
                         <h2>Get in touch</h2>
@@ -71,7 +74,7 @@ export default function Contact() {
                                 </Col>
                                 <Col size={12} className="px-1">
                                     <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                                    <button type="submit"><span>{buttonText}</span></button>
+                                    <button type="submit" ><span>{buttonText}</span></button>
                                 </Col>
                                 {
                                     status.message &&

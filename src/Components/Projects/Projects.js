@@ -11,6 +11,11 @@ import projImg1 from '../../Assets/project-img1.png'
 import projectDashboard from '../../Assets/project-dashboard.png'
 import projectAbout from '../../Assets/project-about.png'
 import projectCreate from '../../Assets/project-createproduct.png'
+//Work projects
+import image1 from '../../Assets/unknown.png'
+import image2 from '../../Assets/unknown (1).png'
+import image3 from '../../Assets/unknown (2).png'
+
 
 //UI Design projects
 
@@ -36,19 +41,19 @@ export default function Projects() {
             imgUrl: projectCreate,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Front end Projects",
+            description: "Managing public Holidays",
+            imgUrl: image1,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Front end Projects",
+            description: "Managing public Holidays",
+            imgUrl: image2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Front end Projects",
+            description: "Managing public Holidays",
+            imgUrl: image3,
         },
     ];
 
