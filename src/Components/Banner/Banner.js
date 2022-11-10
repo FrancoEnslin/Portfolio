@@ -5,6 +5,8 @@ import {ArrowRightCircle} from 'react-bootstrap-icons'
 import { useHref } from 'react-router-dom'
 import headerImg from '../../Assets/header-img.svg'
 import pfp from '../../Assets/pfp.jpeg'
+import Spline from '@splinetool/react-spline';
+
 
 export const Banner = () => {
     const [loopNumber, setLoopNumber] = useState(0)
@@ -55,8 +57,10 @@ export const Banner = () => {
                         
                         </button>
                     </Col>
-                    <Col  xs={12} md={6} xl={5}>
+                    <Col xs={12} md={6} xl={5}> 
+                    {/*  */}
                         <img src={headerImg} alt='Some cool photo' className=''/>
+                        {/* <Spline scene="https://prod.spline.design/oUlczkNHSS-gc1F2/scene.splinecode" /> */}
                     </Col>
                 </Row>
             </Container>

@@ -6,6 +6,7 @@ import {Skills} from './Components/Skills/Skills'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Projects from './Components/Projects/Projects'
 import Contact from './Components/Contact/Contact';
+import Spline from './Components/Spline/Spline';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
        <NavBar />
        <Banner />
        <Skills />
+       <Spline />
        <Projects />
        <Contact />
        <Footer />

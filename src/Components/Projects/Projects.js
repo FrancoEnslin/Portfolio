@@ -15,7 +15,12 @@ import projectCreate from '../../Assets/project-createproduct.png'
 import image1 from '../../Assets/unknown.png'
 import image2 from '../../Assets/unknown (1).png'
 import image3 from '../../Assets/unknown (2).png'
-
+//UI
+import Contact from '../../Assets/NewUI.png'
+import Landing from '../../Assets/Landing1.png'
+import Banner from '../../Assets/Banner1.png'
+import Skills from '../../Assets/Skills.png'
+import Landing2 from '../../Assets/Landing2.png'
 
 //UI Design projects
 
@@ -59,34 +64,34 @@ export default function Projects() {
 
     const UIProjects = [
         {
-            title: "Final year project",
-            description: "Design & Development",
-            imgUrl: projectDashboard,
+            title: "3d Spline",
+            description: "Animation",
+            imgUrl: Landing,
         },
         {
-            title: "Final year project",
-            description: "Design & Development",
-            imgUrl: projectAbout,
+            title: "3d Spline",
+            description: "Animation",
+            imgUrl: Landing2,
         },
         {
-            title: "Final year project",
-            description: "Design & Development",
-            imgUrl: projectCreate,
+            title: "3d Spline",
+            description: "Animation",
+            imgUrl: Landing,
         },
         {
-            title: "Business Startup",
+            title: "Portfolio",
             description: "Design & Development",
-            imgUrl: projImg1,
+            imgUrl: Contact,
         },
         {
-            title: "Business Startup",
+            title: "Portfolio",
             description: "Design & Development",
-            imgUrl: projImg2,
+            imgUrl: Banner,
         },
         {
-            title: "Business Startup",
+            title: "Portfolio",
             description: "Design & Development",
-            imgUrl: projImg3,
+            imgUrl: Skills,
         },
     ];
 
@@ -107,19 +112,19 @@ export default function Projects() {
             imgUrl: projectCreate,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Front end Projects",
+            description: "Managing public Holidays",
+            imgUrl: image1,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Front end Projects",
+            description: "Managing public Holidays",
+            imgUrl: image2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Front end Projects",
+            description: "Managing public Holidays",
+            imgUrl: image3,
         },
     ];
 
@@ -140,7 +145,7 @@ export default function Projects() {
                                     <Nav.Link eventKey="second" > UI Design </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third" > Ongoing projects </Nav.Link>
+                                    <Nav.Link eventKey="third" > Software Development </Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
