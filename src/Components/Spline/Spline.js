@@ -15,7 +15,7 @@ export default function spline() {
     return (
         <div style={divStyle}>
            <button onClick={ () =>{window.location.href='https://my.spline.design/landing-a09fd1944355732eecc060d80b083b9e/'}}>?</button> 
-            <Spline scene="https://prod.spline.design/oUlczkNHSS-gc1F2/scene.splinecode" />
+           <Spline scene="https://prod.spline.design/oUlczkNHSS-gc1F2/scene.splinecode" />
         </div>
 
     );
