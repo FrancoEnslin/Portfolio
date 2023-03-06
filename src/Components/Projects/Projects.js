@@ -26,6 +26,9 @@ import Landing2 from '../../Assets/Landing2.png'
 
 
 //Startup projects
+import BudgetApp from '../../Assets/BudgetApp.png'
+import ExpensesChart from '../../Assets/ExpensesChart.png'
+import SummaryChart from '../../Assets/SummaryChart.png'
 
 export default function Projects() {
 
@@ -97,19 +100,20 @@ export default function Projects() {
 
     const StartUpProjects = [
         {
-            title: "Final year project",
+            title: "Budget App",
             description: "Design & Development",
-            imgUrl: projectDashboard,
+            imgUrl: BudgetApp,
+            URL: 'https://myfirstbudget.netlify.app/'
         },
         {
-            title: "Final year project",
+            title: "Budget App",
             description: "Design & Development",
-            imgUrl: projectAbout,
+            imgUrl: ExpensesChart,
         },
         {
-            title: "Final year project",
+            title: "Budget App",
             description: "Design & Development",
-            imgUrl: projectCreate,
+            imgUrl: SummaryChart,
         },
         {
             title: "Front end Projects",
